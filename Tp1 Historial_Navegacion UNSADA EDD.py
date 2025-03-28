@@ -39,7 +39,7 @@ class HistorialNavegacion:          #Creamos la clase HistorialNavegacion CON 3 
 def main():                                
     historial = HistorialNavegacion()   #Creamos la Instancia de la clase, las paginas del Historial
 
-    for i in range(3):                  #creamos un Bucle for que se va a repetir 3 veces, para ingresar 3 paginas al Historial
+    for i in range(4):                  #creamos un Bucle for que se va a repetir 3 veces, para ingresar 3 paginas al Historial
         url = input(f"Ingrese la URL de la página {i+1}: ")  #Pedimos que ingresen por teclado la URL, para almacenarta como una instancia de la clase Pagina
         pagina = Pagina(url)                         #Creamos una Instancia de la Pagina con la URL ingresada
         historial.agregar_pagina(pagina)   #llamamos a la funcion agregar_pagina para agregar la pagina al historial
